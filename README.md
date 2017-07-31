@@ -22,6 +22,14 @@ step2: (1s)  #
 ```
 
 # Input format
+The input file contains a JSON object with a list of executions. Each object maps to a single execution of the LogicHub threat detection algorithm. Each object contains a `steps` object, which lists every single step and its execution time `timeMs` in milliseconds.
+
+You can assume:
+* Every execution will have the same steps for a given file.
+* Each file will contain between 1 and 10,000 executions.
+* The execution time is between 1ms and 2h.
+* Each execution will have between 1 and 20 steps.
+
 ```json
 {
  "executions":
@@ -50,3 +58,21 @@ step2: (1s)  #
   ] 
 }
 ```
+
+# Output
+You should produce a histogram of the execution time of each step, ordering the most expensive steps first. To aggregate each step, please use the _median_ execution time across all executions. 
+
+Keep in mind:
+* Histograms are meant to be readable. How will your histogram render a histogram where one step took 1 hour, the next step took 1 ms, and the next step took 3 minutes?
+* The following enhancements are *not required*, but please structure your code assuming you might have to add them in the future:
+ * Ability to visualize other aggregate statistics easily (e.g. max execution time, average execution time)
+ * Error bars for the variability in runtime for a given step between executions 
+ * Ability to visualize a per-step histogram of execution, where the output is multiple charts, one per step, with a histogram of execution times. 
+
+
+# Hand in your code:
+Please send your source code as well as a short paragraph description explaining the structure of your code and how your code could be modified to accommodate the extensions above.
+
+
+
+
