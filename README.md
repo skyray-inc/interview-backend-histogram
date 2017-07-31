@@ -10,6 +10,7 @@ You will write the following application:
 ./<YOUR_APPLICATION_NAME> PATH_TO_JSON 
 ```
 
+- Your application can be written in any major language (e.g. Java, Scala, Python, etc), but please package it in a way that makes it easy to compile / run it.
 - The application is initialized with a path to a JSON file with runtime statistics for each step
 - Your application should output a histogram with aggregate statistics about each step:
 
