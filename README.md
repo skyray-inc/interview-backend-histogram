@@ -7,7 +7,7 @@ In order to identify threats for our customers, LogicHub analyzes customer data 
 You will write the following application: 
 
 ```
-./histogram.sh PATH_TO_JSON 
+./<YOUR_APPLICATION_NAME> PATH_TO_JSON 
 ```
 
 - The application is initialized with a path to a JSON file with runtime statistics for each step
@@ -15,7 +15,7 @@ You will write the following application:
 
 ```
 step3: (30s) ############################## 
-step4: (10s) ##########
+step4: (15s) ###############
 step1: (5s)  #####
 step2: (1s)  #
 
@@ -65,9 +65,9 @@ You should produce a histogram of the execution time of each step, ordering the 
 Keep in mind:
 * Histograms are meant to be readable. How will your histogram render a histogram where one step took 1 hour, the next step took 1 ms, and the next step took 3 minutes?
 * The following enhancements are *not required*, but please structure your code assuming you might have to add them in the future:
- * Ability to visualize other aggregate statistics easily (e.g. max execution time, average execution time)
- * Error bars for the variability in runtime for a given step between executions 
- * Ability to visualize a per-step histogram of execution, where the output is multiple charts, one per step, with a histogram of execution times. 
+  1. Ability to visualize other aggregate statistics easily (e.g. max execution time, average execution time)
+  2. Error bars for the variability in runtime for a given step between executions 
+  3. Ability to visualize a per-step histogram of execution, where the output is multiple charts, one per step, with a histogram of execution times. 
 
 
 # Hand in your code
