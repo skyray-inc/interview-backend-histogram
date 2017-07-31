@@ -70,7 +70,7 @@ Keep in mind:
  * Ability to visualize a per-step histogram of execution, where the output is multiple charts, one per step, with a histogram of execution times. 
 
 
-# Hand in your code:
+# Hand in your code
 Please send your source code as well as a short paragraph description explaining the structure of your code and how your code could be modified to accommodate the extensions above.
 
 
